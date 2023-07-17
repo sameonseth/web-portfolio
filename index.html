@@ -1,0 +1,216 @@
+<!-- 
+NOTES:
+> Keep the portfolio responsive in extra small, medium, and extra large screen sizes. (Use: col-12 col-md-6)
+> (DONE) Element with the title, "Full Stack Web Developer"
+> (DONE) Element with, "Seth Sameon"
+> (DONE) Add forms and textarea in Contact Section
+> (DONE) No <br> elements
+> (DONE) All CSS should be external
+> (DONE) NO default web page fonts
+> (DONE) Single-page portfolio
+> No horizontal scrolls
+> No dead links
+ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Seth Sameon - Developer Portfolio</title>
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- External CSS -->
+		<link rel="stylesheet" href="./styles.css">
+
+		<!-- Bootstrap v5.3 CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+		<!-- Bootstrap Icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+		<!-- AOS CSS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<!-- Navbar Start -->
+			<nav class="navbar fixed-top justify-content-evenly justify-content-md-between bg-black shadow" id="portfolio-navbar">
+				<img class="img-fluid ms-md-4" id="portfolio-logo" src="./images/portfolio_logo.png" alt="Seth Sameon">
+		  		<ul class="nav nav-pills me-md-4 mt-3 mt-sm-0">
+				    <li class="nav-item">
+				      	<a class="nav-link text-light budge-up-on-hover" href="#landing-section">Hi!</a>
+				    </li>
+				    <li class="nav-item">
+				      	<a class="nav-link text-light budge-up-on-hover" href="#projects-section">Projects</a>
+				    </li>
+				    <li class="nav-item">
+				      	<a class="nav-link text-light budge-up-on-hover" href="#tools-section">Tools</a>
+				    </li>
+				    <li class="nav-item">
+				      	<a class="nav-link text-light budge-up-on-hover" href="#contact-section">Contact</a>
+				    </li>
+			  	</ul>
+			</nav>
+			<!-- Navbar End -->
+		</header>
+		<main class="container-fluid" data-bs-spy="scroll" data-bs-target="#portfolio-navbar" data-bs-root-margin="0px 0px -55%" data-bs-smooth-scroll="true" tabindex="0">
+			<section class="row min-vh-100 align-items-end text-light shadow" id="landing-section">
+				<div class="col-12 text-center" id="landing-text">
+					<h2 id="landing-name">Hi! I'm Seth Sameon.</h2>
+					<h1 class="text-primary" id="landing-role"></h1>
+				</div>
+			</section>
+			
+			<section class="row min-vh-100 p-5 shadow" id="projects-section">
+				<h2 class="col-12 text-center my-5" data-aos="zoom-in">Here are some of my works</h2>
+				<div class="col-12 col-sm-8 col-md-7 col-lg-4 col-xl-3 card mx-auto my-4 mb-md-0 bg-dark" data-aos="fade-up-right">
+					<div class="card-body rounded text-center text-light">
+						<img class="card-img-top" src="./images/project_1.png">
+						<h5 class="card-title pt-4">Class Record Application</h5>
+						<div class="card-text text-break">An application that helps teachers/professors/instructors to keep track on students' records in terms of attendance and grades. With this application, the user can add and remove subjects, add and remove students, and add and remove grades.</div>		
+					</div>
+				</div>
+				<div class="col-12 col-sm-8 col-md-7 col-lg-4 col-xl-3 card mx-auto my-4 mb-md-0 bg-dark" data-aos="fade-up-left">
+					<div class="card-body rounded text-center text-light">
+						<img class="card-img-top" src="./images/project_2.png">
+						<h5 class="card-title pt-4">Zhen Architecture + Construction Website</h5>
+						<div class="card-text text-break">A website to promote an architecture and construction company's business by showing off their previous projects, the history of the company, and the values of the people who are working for the company.</div>		
+					</div>
+				</div>
+				<div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xl-3 card mx-auto my-4 mb-md-0 bg-dark" data-aos="fade-up-right">
+					<div class="card-body rounded text-center text-light">
+						<img class="card-img-top" src="./images/project_3.png">
+						<h5 class="card-title pt-4">FREQUENCY PULSE GENERATOR</h5>
+						<div class="card-text text-break">A signal generator is connected to the device (as you may see in the design above) which in turn will display the value of the frequency of the signal through 3 7-segment displays.</div>		
+					</div>
+				</div>
+			</section>
+			
+			<section class="row min-vh-100 p-5 shadow bg-dark text-light" id="tools-section">
+				<h2 class="col-12 text-center my-5" data-aos="zoom-in">Below are the tools that you can find in my developer kit</h2>
+				<div class="col-12 col-sm-9 col-md-8 col-lg-7 col-xl-6 mx-auto mt-3 mb-5 pb-5 d-flex flex-column align-items-center">
+					<button class="btn btn-light w-100 mt-5 turn-blue-on-hover" type="button" data-aos="fade-right" disabled>Full Stack Web Developer Tools</button>
+					<div class="tools-group d-flex flex-lg-column d-grid gap-3 mt-5">
+						<div class="d-flex flex-column flex-lg-row justify-content-evenly d-grid gap-4">
+							<img class="tools-img" src="./images/logo-html5.png">
+							<img class="tools-img" src="./images/logo-css3.png">
+							<img class="tools-img" src="./images/logo-bootstrap.png">
+							<img class="tools-img" src="./images/logo-javascript.png">
+						</div>
+						<div class="d-flex flex-column flex-lg-row justify-content-evenly d-grid gap-4">
+							<img class="tools-img" src="./images/logo-xampp.png">
+							<img class="tools-img" src="./images/logo-mysql.png">
+							<img class="tools-img" src="./images/logo-php.png">
+							<img class="tools-img" src="./images/logo-wordpress.png">
+						</div>		
+					</div>
+					<button class="btn btn-light w-100 mt-5 turn-blue-on-hover" type="button" data-aos="fade-right" disabled>Software Developer Tools</button>
+					<div class="tools-group d-flex flex-column flex-md-row justify-content-evenly d-grid gap-4 gap-md-0 mt-5">
+						<div class="d-flex justify-content-evenly d-grid gap-4">
+							<img class="tools-img" src="./images/logo-c.png">
+							<img class="tools-img" src="./images/logo-c++.png">
+						</div>
+						<div class="d-flex justify-content-evenly d-grid gap-4">
+							<img class="tools-img ms-md-4" src="./images/logo-objective-c.png">
+							<img class="tools-img" src="./images/logo-python.png">
+						</div>
+					</div>
+					<button class="btn btn-light w-100 mt-5 turn-blue-on-hover" type="button" data-aos="fade-right" disabled>Computer Engineer Tools</button>
+					<div class="tools-group d-flex flex-column flex-md-row d-grid gap-4 gap-md-0 mt-5">
+						<div class="d-flex mx-auto mx-md-0">
+							<img class="tools-img" src="./images/logo-eagle.png">
+						</div>
+						<div class="d-flex justify-content-evenly">
+							<img class="tools-img ms-md-2" src="./images/logo-proteus.png">
+							<img class="tools-img" src="./images/logo-raspberry-pi.png">
+						</div>
+					</div>
+					<button class="btn btn-light w-100 mt-5 turn-blue-on-hover" type="button" data-aos="fade-right" disabled>Other Tools</button>
+					<div class="tools-group d-flex flex-column flex-lg-row mt-5">
+						<div class="d-flex mx-auto mx-lg-0 mb-4 mb-lg-0">
+							<img class="tools-img" src="./images/logo-dev-c++.png">
+						</div>
+						<div class="d-flex justify-content-evenly">
+							<img class="tools-img ms-lg-5" src="./images/logo-notepad++.png">
+							<img class="tools-img" src="./images/logo-visual-studio-code.png">
+						</div>
+						<div class="d-flex justify-content-evenly">
+							<img class="tools-img" src="./images/logo-sublime-text-3.png">
+							<img class="tools-img" src="./images/logo-git.png">
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="row min-vh-100 d-flex flex-column p-5" id="contact-section">
+				<h2 class="text-center mt-5" data-aos="zoom-in">Let's make a connection</h2>
+				<div class="col-12 col-sm-6 col-lg-4 mx-auto mt-5"  data-aos="zoom-in-up">
+					<!-- Contact Form Start -->
+					<form class="d-flex flex-column" name="contact-form">
+						<div class="form-floating">
+					    	<input class="form-control" id="name" type="text" placeholder="Enter name" name="name" required>
+					    	<label for="name">Name</label>
+						</div>
+						<div class="form-floating mt-3">
+					    	<input class="form-control" id="email" type="email" placeholder="Enter email" name="email" required>
+					    	<label for="email">Email</label>
+					    </div>
+					    <div class="form-group mt-3">
+							<textarea class="form-control" id="message" rows="10" name="message" placeholder="Enter your message" required></textarea>						
+						</div>
+						<button class="btn btn-primary shadow mx-auto mt-3" type="button" onclick="inputCheck()">Send Email</button>
+					</form>
+					<!-- Contact Form End -->
+
+					<!-- Success Alert Start -->
+					<div class="alert alert-success alert-dismissible fade show shadow mt-3" id="message-sent" role="alert">
+						<button type="button" class="btn-close" onclick="closeAlert('message-sent')"></button>
+						<div class="text-center">	
+							<strong>Success!</strong> Message Sent.
+						</div>
+					</div>
+					<!-- Success Alert End -->
+
+					<!-- Danger Alert Start -->
+					<div class="alert alert-danger alert-dismissible fade show shadow mt-3" id="message-fail" role="alert">
+						<button type="button" class="btn-close" onclick="closeAlert('message-fail')"></button>
+						<div class="text-center">	
+							<strong>Oops!</strong> Please fill all the input fields.
+						</div>
+					</div>
+					<!-- Danger Alert End -->
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<!-- Contact Links Start -->
+			<div class="d-flex justify-content-center d-grid gap-3 mb-4">
+				<a class="icon-link pb-2" href="https://www.linkedin.com/in/seth-sameon-2541601b6/">
+					<i class="bi bi-linkedin text-secondary budge-up-on-hover"></i>
+				</a>
+				<div class="vr"></div>
+				<a class="icon-link pb-2" href="https://www.discordapp.com/users/679358491906932766">
+					<i class="bi bi-discord text-secondary budge-up-on-hover"></i>
+				</a>
+			</div>
+			<!-- Contact Links End -->
+		</footer>
+
+		<!-- Bootstrap v5.3 JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+		<!-- External JS -->
+		<script src="./scripts.js"></script>
+
+		<!-- AOS JS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

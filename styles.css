@@ -1,0 +1,179 @@
+/* 	SMOOTH SCROLLING */
+html {
+	scroll-behavior: smooth !important;
+}
+/* END OF SMOOTH SCROLLING */
+
+
+
+
+
+/* FONTS */
+body {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+#landing-name, #landing-role {
+	font-weight: 700 !important;
+}
+/* END OF FONTS */
+
+
+
+
+
+/* COLORS */
+input, textarea {
+	border-color: black !important;
+}
+/* END OF COLORS */
+
+
+
+
+
+/* BACKGROUND */
+#landing-section {
+	background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 1.0)),
+	            url("./images/landing_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+/* END OF BACKGROUND */
+
+
+
+
+
+/* SIZES */
+#portfolio-logo {
+	width: 9.4rem;
+	height: 1.4rem;
+}
+
+#portfolio-favicon-logo {
+	width: 1.6rem;
+	height: 1.9rem;
+}
+
+.tools-img {
+	width: 9.37rem;
+}
+/* END OF SIZES */
+
+
+
+
+
+/* MARGINS & PADDINGS */
+#landing-text {
+	margin-bottom: 5rem;
+}
+/* END OF MARGINS & PADDINGS */
+
+
+
+
+
+/* ANIMATIONS */
+/* rotate */
+@keyframes rotateOnHover {
+	100% {
+		rotate: 360deg;
+	}
+}
+
+.rotate-on-hover:hover {
+	animation-name: rotateOnHover;
+	animation-duration: .5s;
+}
+/* end of rotate */
+
+/* budge */
+@keyframes budgeRightOnHover {
+	100% {
+		transform: translateX(.5rem);
+	}
+}
+
+.budge-right-on-hover:hover {
+	animation-name: budgeRightOnHover;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes budgeUpOnHover {
+	100% {
+		transform: translateY(-.4rem);
+		text-decoration: none;
+	}
+}
+
+.budge-up-on-hover:hover {
+	animation-name: budgeUpOnHover;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+/* end of budge */
+
+/* deselect on mouse out */
+@keyframes deselectOnMouseOut {
+	100% {
+		text-decoration: none;
+	}
+}
+
+.deselect-on-mouse-out:hover, .deselectOnMouseOut:active {
+	animation-name: deselectOnMouseOut;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+/* end of deselect on mouse out */
+
+/* caret */
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/* end of caret */
+
+/* turn blue on hover */
+@keyframes turnBlueOnHover {
+	100% {
+		color: #f8f9fa;
+		background-color: #0d6efd;
+	}
+}
+
+.turn-blue-on-hover:hover {
+	animation-name: turnBlueOnHover;
+	animation-duration: .1s;
+	animation-fill-mode: forwards;
+}
+/* end of turn blue on hover */
+/* END OF ANIMATIONS */
+
+
+
+
+
+/* FOR THE TYPING ANIMATION */
+#landing-role {
+	text-transform: uppercase !important;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+
+
+
+
+/* FOR THE FORM VALIDATION */
+#message-sent, #message-fail {
+	display: none;
+}
